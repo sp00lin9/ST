@@ -39,6 +39,7 @@
   width: 33%;
   text-align: center;
   color: #FFFFFF;
+  -webkit-app-region: no-drag;
   transition: all ease-in-out .2s;
 }
 
