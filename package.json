@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager --overwrite ./ SwapTrade --out ./release --platform=win32 --arch=x64"
+    "build": "electron-packager --overwrite ./ SwapTrade --out ./release --platform=win32 --arch=x64",
+    "build-all": "electron-packager --overwrite ./ SwapTrade --out ./release --all"
   },
   "keywords": [
     "SwapTrade"
@@ -13,6 +14,7 @@
   "author": "SwapTrade",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "electron": "^1.7.8",
     "electron-packager": "^9.1.0",
     "jquery": "^3.2.1"

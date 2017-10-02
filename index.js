@@ -10,12 +10,14 @@ let win;
 
 function createWindow(){
   win = new BrowserWindow({
-    width: 1000,
-    height: 600,
+    width: 1500,
+    height: 1000,
     frame: false,
     icon: path.join(__dirname, ICON_DIR, 'SwapTrade.png'),
   });
+
   win.openDevTools();
+  
   win.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     protocol: 'file',
