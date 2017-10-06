@@ -16,10 +16,8 @@ function createWindow(){
     icon: path.join(__dirname, ICON_DIR, 'SwapTrade.png'),
   });
 
-  win.openDevTools();
-  
   win.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, 'login.html'),
     protocol: 'file',
     slashes: true
   }));
